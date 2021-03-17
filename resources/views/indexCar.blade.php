@@ -6,6 +6,12 @@
         <title>Cars Danilo</title>
     </head>
     <body>
+      {{-- VISUALIZZAZIONE SEMPLICE --}}
+
+      {{-- @foreach ($allCars as $car)
+         {{ $car }} <br/><br/>
+      @endforeach --}}
+
        @foreach ($allCars as $car )
          <h1 style="text-transform: capitalize">{{ $car->brand }} {{ $car->model }}</h1>
           <ul>
