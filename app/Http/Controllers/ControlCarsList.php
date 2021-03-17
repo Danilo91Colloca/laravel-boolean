@@ -11,6 +11,7 @@ class ControlCarsList extends Controller
     public function indexCar()
     {
       $allCars= Car::all();
+      // dump($allCars);
       return view('indexCar',
         [
          'allCars' => $allCars
