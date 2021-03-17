@@ -13,5 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'ControlCarsList@indexCar');
-
+Route::get('/{id?}', 'ControlCarsList@indexCar');
